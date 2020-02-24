@@ -1,0 +1,47 @@
+#showPrice {
+  text-align: left;
+  display: none;
+}
+
+#showAddress {
+  text-align: left;
+  display: none;
+}
+
+#showToppings{
+  text-align: left;
+  display: none;
+}
+
+.blueColor {
+  color: coral;
+}
+
+#anim {
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+
+
+input[type=text] {
+  visibility:hidden;
+}
+
+input[type=checkbox]:checked + input[type=text] {
+  visibility:visible;
+}
+
